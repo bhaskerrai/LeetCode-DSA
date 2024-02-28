@@ -62,6 +62,16 @@ def maxNumberOfBalloons2(text: str) -> int:
 
     return min(counts['b'], min(counts['a'], min(counts['l'], min(counts['o'], counts['n']))))
 
+    # OR
+    # ans = float("inf")   
+    # for ch in counts:
+    #     ans = min(ans, counts[ch])
+
+    # return ans
+
+    # OR
+    # return min(counts.values())
+
 print(maxNumberOfBalloons2("nlaebolko"))
 print(maxNumberOfBalloons2("loonbalxballpoon"))
 print(maxNumberOfBalloons2("leetcode"))

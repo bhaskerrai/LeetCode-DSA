@@ -22,7 +22,7 @@ def minimumCardPickup(cards: List[int]) -> int:
     for key in counts:
         arr = counts[key]
 
-        print()
+        # print()
 
         for i in range(len(arr) - 1):
             print("\nans before:", ans)
@@ -49,7 +49,7 @@ The current algorithm has O(n) space complexity always, but with the improvement
 
 def minimumCardPickup2(cards: List[int]) -> int:
     
-    map = defaultdict(list)
+    map = defaultdict(int)
     ans = float("inf")
 
     for i in range(len(cards)):

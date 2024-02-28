@@ -67,8 +67,8 @@ def maximumSum2(nums: List[int]) -> int:
     
     return ans
 
-print(maximumSum2([18,43,36,13,7]))
-print(maximumSum2([10,12,19,14]))
+# print(maximumSum2([18,43,36,13,7]))
+# print(maximumSum2([10,12,19,14]))
 
 
 '''
@@ -78,7 +78,12 @@ We also save on an extra iteration and a sort in each iteration, giving us a tim
 '''
        
         
-
+a = 345
+a = str(a)
+s = 0
+for num in a:
+    s += int(num)
+print(s)
 
 
 

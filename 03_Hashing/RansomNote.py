@@ -17,21 +17,21 @@ import collections
 
 # Approach 2: Two HashMaps
 
-# def canConstruct2(ransomNote: str, magazine: str) -> bool:
-#     ransomNote_map = defaultdict(int)
-#     magazine_map = defaultdict(int)
+def canConstruct2(ransomNote: str, magazine: str) -> bool:
+    ransomNote_map = defaultdict(int)
+    magazine_map = defaultdict(int)
 
-#     for char in magazine:
-#         magazine_map[char] += 1
+    for char in magazine:
+        magazine_map[char] += 1
     
-#     for char in ransomNote:
-#         ransomNote_map[char] += 1
+    for char in ransomNote:
+        ransomNote_map[char] += 1
 
-#     for key in ransomNote_map:
-#         if ransomNote_map[key] != magazine_map[key]:
-#             return False
+    for key in ransomNote_map:
+        if ransomNote_map[key] != magazine_map[key]:
+            return False
     
-#     return True
+    return True
 
 
 
